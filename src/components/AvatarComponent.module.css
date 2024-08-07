@@ -1,0 +1,13 @@
+
+
+.avatarContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .dark{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+  

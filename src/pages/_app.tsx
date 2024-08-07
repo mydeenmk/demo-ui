@@ -1,6 +1,26 @@
+// src/pages/_app.tsx
+import type { AppProps } from 'next/app';
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import { Inter as FontSans } from "next/font/google";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    
+    <div >
+      
+        <div className={fontSans.variable }>
+      <Component {...pageProps} />
+      
+    </div>
+    </div>
+    
+    
+  );
 }
+
+export default MyApp;

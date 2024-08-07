@@ -1,0 +1,11 @@
+:root {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    /* Add more variables as needed */
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  

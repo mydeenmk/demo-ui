@@ -1,0 +1,39 @@
+/* components/SearchBar.module.css */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.searchIcon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 300px;
+}
+
+.searchInput {
+  width: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.searchInput.open {
+  width: 400px;
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
